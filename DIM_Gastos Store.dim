@@ -1,0 +1,184 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9fad3e12-12e6-46f5-9c4b-5ac57d537d13" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DIM_Gastos Store</ID>
+  <Name>DIM_Gastos Store</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="77e0a232-4cda-460e-82fb-42b8fed70a2d">
+    <DataSourceViewID>Bikestores MART DSV</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="08d4efe8-6616-4e72-ad40-f06687dd6577">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="69ae464c-57ec-4a0f-bdbb-122437a254dd">
+      <ID>Gasto Key</ID>
+      <Name>Gasto Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5bf09127-770c-4954-8852-6dedc71fb9cb">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3480fe3b-defd-4cfc-a7d1-5af4755521cd">
+            <TableID>dbo_DIM_gastos_store</TableID>
+            <ColumnID>gasto_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="a032eced-c961-4521-aa96-1c05300ebe26">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f5f02347-35ad-45d7-bf35-91b071b5abd5">
+          <TableID>dbo_DIM_gastos_store</TableID>
+          <ColumnID>gasto_id</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="86fa9e5a-ed74-414e-9c21-cb51b66871f7">
+          <AttributeID>Store Name</AttributeID>
+          <Name>Store Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e8abe4ad-e1ac-4a60-ab22-cb3252103c76">
+          <AttributeID>Renta</AttributeID>
+          <Name>Renta</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="00a2f14e-276e-4ce1-8e24-61ccd1d9b2da">
+          <AttributeID>Nomina</AttributeID>
+          <Name>Nomina</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1fc2ba3b-2a54-4b5f-ae89-542021a46618">
+          <AttributeID>Total</AttributeID>
+          <Name>Total</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="90dad363-89cb-42a3-b0d6-d787c26a6e47">
+          <AttributeID>Store Key</AttributeID>
+          <Name>Store Key</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c70ca1b6-264b-4931-ba73-de432d730a71">
+      <ID>Store Name</ID>
+      <Name>Store Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="52be25b5-fb4f-401b-b3c1-a2afdd87f267">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a71cade2-690e-492f-9bab-f6fcc5a2d1b4">
+            <TableID>dbo_DIM_gastos_store</TableID>
+            <ColumnID>store_name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="26a027d7-bf12-4550-82c6-d933eb60d9a7">
+      <ID>Renta</ID>
+      <Name>Renta</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a851a2ea-54b9-4d9d-a819-3c1affd0d485">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9a1aefa6-0462-4683-9df0-dad2e0a27e6f">
+            <TableID>dbo_DIM_gastos_store</TableID>
+            <ColumnID>renta</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4a31d1db-f993-4728-a9dc-ee8937bb22b4">
+      <ID>Nomina</ID>
+      <Name>Nomina</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="75b3d85d-86ff-423e-8641-2e619b3a6539">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b9b4184e-b516-4e40-9d83-130c249bdc00">
+            <TableID>dbo_DIM_gastos_store</TableID>
+            <ColumnID>nomina</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fb2a5675-fa6a-40c0-9f7b-005a5694d438">
+      <ID>Total</ID>
+      <Name>Total</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="069f7603-0495-400e-a2d8-a355986469d8">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="21ea00e0-dd23-4315-833c-ba4599691635">
+            <TableID>dbo_DIM_gastos_store</TableID>
+            <ColumnID>total</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="89696a43-edbc-44cd-bdd5-87e75259c4d1">
+      <ID>Store Key</ID>
+      <Name>Store Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="20c14944-071a-43a3-948e-f204dfff23f3">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0dc24626-ed0a-4a0b-a6c2-9842d7fc8cd7">
+            <TableID>dbo_DIM_stores</TableID>
+            <ColumnID>store_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

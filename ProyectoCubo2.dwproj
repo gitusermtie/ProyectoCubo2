@@ -6,10 +6,67 @@
     <Name>ProyectoCubo2.database</Name>
     <FullPath>ProyectoCubo2.database</FullPath>
   </Database>
+  <Dimensions>
+    <ProjectItem>
+      <Name>DIM_FECHA.dim</Name>
+      <FullPath>DIM_FECHA.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM_Categoria.dim</Name>
+      <FullPath>DIM_Categoria.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM_Stores.dim</Name>
+      <FullPath>DIM_Stores.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM_Customers.dim</Name>
+      <FullPath>DIM_Customers.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM_Products.dim</Name>
+      <FullPath>DIM_Products.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM_Staffs.dim</Name>
+      <FullPath>DIM_Staffs.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM_Gastos Store.dim</Name>
+      <FullPath>DIM_Gastos Store.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Bikestores MART DS.ds</Name>
+      <FullPath>Bikestores MART DS.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Bikestores MART DSV.dsv</Name>
+      <FullPath>Bikestores MART DSV.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Bikestores MART DS</Id>
+            <Name>Bikestores MART DS</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-DE6LJ3M\SQLSERVER;Password=;User ID=;Initial Catalog=bikestoresMART</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Bikestores MART DS</Id>
+            <Name>Bikestores MART DS</Name>
+            <Value xsi:type="xsd:int">1</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
